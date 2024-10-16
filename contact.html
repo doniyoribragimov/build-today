@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка сайта</title>
+</head>
+
+<body>
+
+    <div class="splitter">
+        <!-- === ASIDE === -->
+        <aside class="aside">
+            <div class="aside__inner">
+                <a class="aside__logolink" href="/">
+                    <img class="aside__logo" src="images/logo.svg" alt="logo">
+                </a>
+
+                <ul class="aside__list">
+                    <li><a href="#">Девелопмент</a></li>
+                    <li><a href="#">Строительство</a></li>
+                    <li><a href="#">Проектирование</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li class="active"><a href="#">Контакты</a></li>
+                    <li><a href="#">Работа у нас</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="wrapper">
+            <!-- === HEADER === -->
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a class="header__logolink" href="/">
+                            <img class="header__logo" src="images/logo.svg" alt="logo">
+                        </a>
+
+                        <a class="header__btn getModal" href="#mobileMenu">
+                            <img src="images/header-btn.svg" alt="header btn">
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- ==== MAIN CONTENT ==== -->
+            <main class="main">
+                <!-- === BANNER === -->
+                <section class="banner" style="background-image: url(images/banner-5.webp);">
+                    <div class="container">
+                        <div class="banner__inner">
+                            <div class="banner__content">
+                                <h2 class="title mb">Контакты</h2>
+                                <p class="banner__text">Свяжитесь с нами любым удобным спосом или заполните форму ниже,
+                                    мы сами вам перезвоним</p>
+                            </div>
+
+                            <form class="banner__form">
+                                <div class="banner__grid">
+                                    <input type="text" name="fname" placeholder="Ваше имя">
+                                    <input type="tel" name="phone" placeholder="+7 999 999 99 99">
+                                    <label class="banner__confirm">
+                                        <input type="checkbox" checked>
+                                        <div class="banner__policy">Принимаю условия <a href="#">политики
+                                                конфиденциальности</a></div>
+                                    </label>
+                                </div>
+
+                                <a class="btn btn--blue" href="#">Отправить заявку →</a>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === CONTACT === -->
+                <section class="contact spacing">
+                    <div class="container">
+                        <div class="contact__boxes mb">
+                            <div class="contact__box">
+                                <h3 class="contact__title">Адрес</h3>
+                                <div class="contact__text">г. Москва, ул. Кирпичная, д. 678, корп. 8</div>
+                            </div>
+
+                            <div class="contact__box">
+                                <h3 class="contact__title">телефон</h3>
+                                <a class="contact__text" href="tel:+79999999999">+7 999 999 99 99</a>
+                            </div>
+
+                            <div class="contact__box">
+                                <h3 class="contact__title">почта</h3>
+                                <a class="contact__text" href="mailto:info/info@yandex.ru">info/info@yandex.ru</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__map" id="contactMap"></div>
+                    </div>
+                </section>
+
+                <!-- === STAGES === -->
+                <section class="stages">
+                    <div class="stages__dark">
+                        <div class="container">
+                            <h2 class="stages__title">Получите точный <br>
+                                расчет</h2>
+                            <p class="stages__text">Ответьте на несколько вопросов и получите расчет услуги</p>
+                        </div>
+                    </div>
+
+                    <div class="stages__main">
+                        <div class="container">
+                            <form class="stages__steps">
+                                <div class="stages__step active">
+                                    <div class="stages__process">Вопрос 1/5</div>
+                                    <div class="stages__inner">
+                                        <h3 class="stages__question">Какая цель вашего проекта?</h3>
+                                        <div class="stages__content">
+                                            <div class="stages__radios">
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer1" checked>
+                                                    Ответ 1
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer1">
+                                                    Ответ 2
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer1">
+                                                    Ответ 3
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer1">
+                                                    Ответ 4
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages__bottom">
+                                        <button type="button" class="stages__back btnPrev">
+                                            <img src="images/arrow.svg" alt="arrow icon">
+                                        </button>
+                                        <button type="button" class="btn btn--white btnNext">Далее →</button>
+                                    </div>
+                                </div>
+
+                                <div class="stages__step">
+                                    <div class="stages__process">Вопрос 2/5</div>
+                                    <div class="stages__inner">
+                                        <h3 class="stages__question">Какая цель вашего проекта?</h3>
+                                        <div class="stages__content">
+                                            <div class="stages__radios">
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer2" checked>
+                                                    Ответ 1
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer2">
+                                                    Ответ 2
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer2">
+                                                    Ответ 3
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer2">
+                                                    Ответ 4
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages__bottom">
+                                        <button type="button" class="stages__back btnPrev">
+                                            <img src="images/arrow.svg" alt="arrow icon">
+                                        </button>
+                                        <button type="button" class="btn btn--white btnNext">Далее →</button>
+                                    </div>
+                                </div>
+
+                                <div class="stages__step">
+                                    <div class="stages__process">Вопрос 3/5</div>
+                                    <div class="stages__inner">
+                                        <h3 class="stages__question">Какая цель вашего проекта?</h3>
+                                        <div class="stages__content">
+                                            <div class="stages__radios">
+                                                <label class="stages__radio">
+                                                    <input type="checkbox" name="answer3" checked>
+                                                    Ответ 1
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="checkbox" name="answer3">
+                                                    Ответ 2
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="checkbox" name="answer3">
+                                                    Ответ 3
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="checkbox" name="answer3">
+                                                    Ответ 4
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages__bottom">
+                                        <button type="button" class="stages__back btnPrev">
+                                            <img src="images/arrow.svg" alt="arrow icon">
+                                        </button>
+                                        <button type="button" class="btn btn--white btnNext">Далее →</button>
+                                    </div>
+                                </div>
+
+                                <div class="stages__step">
+                                    <div class="stages__process">Вопрос 4/5</div>
+                                    <div class="stages__inner">
+                                        <h3 class="stages__question">Какая цель вашего проекта?</h3>
+                                        <div class="stages__content">
+                                            <div class="stages__radios">
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer4" checked>
+                                                    Ответ 1
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer4">
+                                                    Ответ 2
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer4">
+                                                    Ответ 3
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer4">
+                                                    Ответ 4
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages__bottom">
+                                        <button type="button" class="stages__back btnPrev">
+                                            <img src="images/arrow.svg" alt="arrow icon">
+                                        </button>
+                                        <button type="button" class="btn btn--white btnNext">Далее →</button>
+                                    </div>
+                                </div>
+
+                                <div class="stages__step">
+                                    <div class="stages__process">Вопрос 5/5</div>
+                                    <div class="stages__inner">
+                                        <h3 class="stages__question">Какая цель вашего проекта?</h3>
+                                        <div class="stages__content">
+                                            <div class="stages__radios">
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer5" checked>
+                                                    Ответ 1
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer5">
+                                                    Ответ 2
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer5">
+                                                    Ответ 3
+                                                </label>
+
+                                                <label class="stages__radio">
+                                                    <input type="radio" name="answer5">
+                                                    Ответ 4
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages__bottom">
+                                        <button type="button" class="stages__back btnPrev">
+                                            <img src="images/arrow.svg" alt="arrow icon">
+                                        </button>
+                                        <button type="button" class="btn btn--white btnNext">Далее →</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+
+            <!-- === FOOTER === -->
+            <footer class="footer spacing">
+                <div class="container">
+                    <div class="footer__head mb">
+                        <h2 class="title">контакты</h2>
+                        <a class="footer__logolink" href="/">
+                            <img class="footer__logo" src="images/logo.svg" loading="lazy" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="footer__inner">
+                        <div class="footer__left">
+                            <div class="footer__items">
+                                <div class="footer__item">
+                                    <h3 class="footer__title">адрес</h3>
+                                    <div class="footer__plain">г. Москва, ул. Кирпичная, д. 678, корп. 8</div>
+                                </div>
+
+                                <div class="footer__item">
+                                    <h3 class="footer__title">Телефон</h3>
+                                    <a class="footer__plain" href="tel:+79999999999">+7 999 999 99 99</a>
+                                </div>
+
+                                <div class="footer__item">
+                                    <h3 class="footer__title">Почта</h3>
+                                    <a class="footer__plain" href="mailto:info/info@yandex.ru">info/info@yandex.ru</a>
+                                </div>
+                            </div>
+
+                            <a class="btn btn--blue getModal" href="#modal">Оставить заявку →</a>
+                        </div>
+
+
+                        <div class="footer__whole">
+                            <div class="footer__map" id="map"></div>
+                        </div>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <a class="footer__link" href="#">Политика конфиденциальности</a>
+                        <div class="footer__copyright">Copyright ООО Название компании 2010-2024 </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- === MODAL === -->
+    <div id="modal" class="modal">
+        <div class="modal__inner">
+            <h3 class="modal__title">Оставить заявку</h3>
+            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
+                проведет бесплатную консультацию</p>
+            <button class="modal__close">
+                <img src="images/x-icon.svg" loading="lazy" alt="x icon">
+            </button>
+            <form class="form">
+                <div class="form__item">
+                    <img src="images/profile-icon.svg" loading="lazy" alt="form icon">
+                    <input type="text" name="fullname" placeholder="Ваше имя">
+                </div>
+                <div class="form__item">
+                    <img src="images/tel-icon.svg" loading="lazy" alt="form icon">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+                </div>
+                <button class="btn btn--blue" type="submit">Отправить заявку</button>
+                <label class="form__confirm">
+                    <input type="checkbox" checked>
+                    <span class="form__policy">
+                        Принимаю условия <a href="#">политики конфиденциальности</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- === MOBILE MENU === -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__head">
+                <a class="mobile-menu__logo" href="/">
+                    <img src="images/logo.svg" loading="lazy" alt="logo">
+                </a>
+                <button class="mobile-menu__close">
+                    <img src="images/x-icon.svg" loading="lazy" alt="x icon">
+                </button>
+            </div>
+
+            <ul class="mobile-menu__list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Строительство</a></li>
+                <li><a href="#">Проектирование</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Работа у нас</a></li>
+            </ul>
+
+            <div class="footer__items">
+                <div class="footer__item">
+                    <h3 class="footer__title">адрес</h3>
+                    <div class="footer__plain">г. Москва, ул. Кирпичная, д. 678, корп. 8</div>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__title">Телефон</h3>
+                    <a class="footer__plain" href="tel:+79999999999">+7 999 999 99 99</a>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__title">Почта</h3>
+                    <a class="footer__plain" href="mailto:info/info@yandex.ru">info/info@yandex.ru</a>
+                </div>
+            </div>
+
+            <a class="btn btn--white getModal" href="#modal">Оставить заявку →</a>
+        </div>
+    </div>
+
+    <!-- === SCRIPTS === -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

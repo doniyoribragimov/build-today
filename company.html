@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка сайта</title>
+</head>
+
+<body>
+
+    <div class="splitter">
+        <!-- === ASIDE === -->
+        <aside class="aside">
+            <div class="aside__inner">
+                <a class="aside__logolink" href="/">
+                    <img class="aside__logo" src="images/logo.svg" alt="logo">
+                </a>
+
+                <ul class="aside__list">
+                    <li><a href="#">Девелопмент</a></li>
+                    <li><a href="#">Строительство</a></li>
+                    <li><a href="#">Проектирование</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li class="active"><a href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Работа у нас</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="wrapper">
+            <!-- === HEADER === -->
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a class="header__logolink" href="/">
+                            <img class="header__logo" src="images/logo.svg" alt="logo">
+                        </a>
+
+                        <a class="header__btn getModal" href="#mobileMenu">
+                            <img src="images/header-btn.svg" alt="header btn">
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- ==== MAIN CONTENT ==== -->
+            <main class="main">
+                <!-- === BANNER === -->
+                <section class="banner" style="background-image: url(images/banner-3.webp);">
+                    <div class="container">
+                        <div class="banner__splitter">
+                            <div class="banner__content">
+                                <h2 class="title mb">ООО <br>
+                                    «Строительно-монтажный трест №11»</h2>
+                                <p class="banner__text banner__text--mini">Много лет девелоперская компания «СМТ №11»
+                                    осуществляет
+                                    инвестиции в финансово-устойчивую структуру, которая является основой обеспечения
+                                    реализации любых строительных, проектных и инжиниринговых услуг и гарантирует 100%
+                                    выполнение взятых на себя договорных обязательств.</p>
+                            </div>
+
+                            <a class="btn btn--blue getModal" href="#modal">Оставить заявку →</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === COMPANY === -->
+                <section class="company spacing">
+                    <div class="container">
+                        <div class="company__inner">
+                            <h2 class="title mb">О компании</h2>
+                            <div class="company__all">
+                                <div class="company__texts">
+                                    <p class="company__text">
+                                        Есть над чем задуматься: интерактивные прототипы освещают чрезвычайно интересные
+                                        особенности картины в целом, однако конкретные выводы, разумеется, ограничены
+                                        исключительно образом мышления.
+                                        <br><br>
+                                        Каждый из нас понимает очевидную вещь: базовый вектор развития требует
+                                        определения и уточнения форм воздействия. Сложно сказать, почему предприниматели
+                                        в сети интернет, инициированные исключительно синтетически, функционально
+                                        разнесены на независимые элементы.
+                                    </p>
+                                    <p class="company__text">
+                                        Есть над чем задуматься: интерактивные прототипы освещают чрезвычайно интересные
+                                        особенности картины в целом, однако конкретные выводы, разумеется, ограничены
+                                        исключительно образом мышления.
+                                        <br><br>
+                                        Каждый из нас понимает очевидную вещь: базовый вектор развития требует
+                                        определения и
+                                        уточнения форм воздействия. Сложно сказать, почему предприниматели в сети
+                                        интернет,
+                                        инициированные исключительно синтетически, функционально разнесены на
+                                        независимые
+                                        элементы.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="company__main">
+                                <img class="company__map" src="images/map.svg" alt="company map">
+                                <div class="company__item company__item--1">
+                                    <img src="images/dot-1.svg" alt="dot icon">
+                                    <div class="company__name">Россия</div>
+                                </div>
+
+                                <div class="company__item company__item--2">
+                                    <img src="images/dot-0.svg" alt="dot icon">
+                                    <div class="company__name">Белорусь</div>
+                                </div>
+
+                                <div class="company__item company__item--3">
+                                    <img src="images/dot-0.svg" alt="dot icon">
+                                    <div class="company__name">Казахстан</div>
+                                </div>
+
+                                <div class="company__item company__item--4">
+                                    <img src="images/dot-0.svg" alt="dot icon">
+                                    <div class="company__name">Армения</div>
+                                </div>
+
+                                <div class="company__item company__item--5">
+                                    <img src="images/dot-0.svg" alt="dot icon">
+                                    <div class="company__name">Кыргыстан</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === FEATURES === -->
+                <section class="features spacing">
+                    <div class="container">
+                        <h2 class="title mb">Наши <br> преимущества</h2>
+                        <div class="features__circles">
+                            <div class="features__circle">
+                                <h3 class="features__bold"><span data-to="19" data-stop="0">0</span></h3>
+                                <p class="features__text">проектов за 3 года</p>
+                            </div>
+
+                            <div class="features__circle">
+                                <h3 class="features__bold"><span data-to="22" data-stop="0">0</span> млрд</h3>
+                                <p class="features__text">общего оборота за год</p>
+                            </div>
+
+                            <div class="features__circle">
+                                <h3 class="features__bold"><span data-to="2000" data-stop="0">0</span></h3>
+                                <p class="features__text">высоковалифицированных специалистов</p>
+                            </div>
+                        </div>
+
+                        <div class="features__lines">
+                            <div class="features__line">
+                                <h4 class="features__title">Собственная строительная техника</h4>
+                                <p class="features__text">дорогостоящая строительная техника, машины и механизмы</p>
+                                <div class="features__icon">
+                                    <img src="images/features-icon-1.svg" loading="lazy" alt="features icon">
+                                </div>
+                            </div>
+
+                            <div class="features__line">
+                                <h4 class="features__title">Собственные предприятия бетонной продукции</h4>
+                                <p class="features__text">производственные мощности с суточным объёмом более 3000 м3</p>
+                                <div class="features__icon">
+                                    <img src="images/features-icon-2.svg" loading="lazy" alt="features icon">
+                                </div>
+                            </div>
+
+                            <div class="features__line">
+                                <h4 class="features__title">Собственная база с цехом</h4>
+                                <p class="features__text">металлоконструкций, полимерной камерой,ремонтными мастерскими
+                                    и пр.</p>
+                                <div class="features__icon">
+                                    <img src="images/features-icon-3.svg" loading="lazy" alt="features icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === TOOLS === -->
+                <section class="tools spacing">
+                    <div class="container">
+                        <h2 class="title">Наше <br> оборудование</h2>
+                        <div class="tools__texts mb">
+                            <p class="tools__text">Наличие собственных производственных мощностей позволяет закрывать
+                                все потребности в качественном бетоне. Разработка песочного карьера «Мишкеникское»
+                                обуславливает получение сырья без наценок, а мощный грохот TESAB TS3600 и радиальный
+                                штабелеукладчик TESAB 8042TSL выступают ключевым оборудованием для производства
+                                просеянного песка. Мытый песок получается после прохождения установки - мойки TESAB DSP
+                                150 55 KW.</p>
+                            <p class="tools__text">Цех по изготовлению металлоконструкций, полимерная камера для
+                                покраски, ремонтные мастерские, дорогостоящая строительная спецтехника, широкий
+                                ассортимент механизмов и агрегатов - далеко не полный перечень конкурентных преимуществ
+                                «СМТ №11». Компания регулярно обновляет материально-техническую базу новыми моделями и
+                                единицами техники.</p>
+                        </div>
+
+                        <div class="tools__wrap">
+                            <div class="tools__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tools__item">
+                                            <img class="tools__img" src="images/tools-1.webp" loading="lazy"
+                                                alt="tools img">
+                                            <h3 class="tools__title">название <br> оборудования</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tools__item">
+                                            <img class="tools__img" src="images/tools-2.webp" loading="lazy"
+                                                alt="tools img">
+                                            <h3 class="tools__title">название оборудования</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tools__item">
+                                            <img class="tools__img" src="images/tools-3.webp" loading="lazy"
+                                                alt="tools img">
+                                            <h3 class="tools__title">название <br> оборудования</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tools__item">
+                                            <img class="tools__img" src="images/tools-4.webp" loading="lazy"
+                                                alt="tools img">
+                                            <h3 class="tools__title">название оборудования</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="tools__item">
+                                            <img class="tools__img" src="images/tools-2.webp" loading="lazy"
+                                                alt="tools img">
+                                            <h3 class="tools__title">название оборудования</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === TRUST === -->
+                <section class="trust spacing">
+                    <div class="container">
+                        <h2 class="title mb">Нам доверяют</h2>
+                        <div class="trust__inner">
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-1.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-2.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-3.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-4.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-5.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-6.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-7.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-8.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-9.svg" loading="lazy" alt="trust img">
+                            </a>
+
+                            <a class="trust__item" href="#">
+                                <img class="trust__img" src="images/trust-10.svg" loading="lazy" alt="trust img">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === WORKS === -->
+                <section class="works spacing">
+                    <div class="container">
+                        <h2 class="title mb">Наши проекты</h2>
+                        <div class="works__inner">
+                            <div class="works__item">
+                                <img class="works__img" src="images/projects-2.webp" alt="works img">
+                                <div class="works__content">
+                                    <h3 class="works__title">Название проекта очень длинное</h3>
+                                    <div class="works__location">г. Москва</div>
+                                    <div class="works__tags">
+                                        <div class="works__tag">#девелопмент</div>
+                                        <div class="works__tag">#строительство</div>
+                                    </div>
+
+                                    <a class="btn-arrow" href="#">→</a>
+                                </div>
+                            </div>
+
+                            <div class="works__item">
+                                <img class="works__img" src="images/projects-1.webp" alt="works img">
+                                <div class="works__content">
+                                    <h3 class="works__title">Название проекта</h3>
+                                    <div class="works__location">г. Москва</div>
+                                    <div class="works__tags">
+                                        <div class="works__tag">#девелопмент</div>
+                                        <div class="works__tag">#строительство</div>
+                                    </div>
+
+                                    <a class="btn-arrow" href="#">→</a>
+                                </div>
+                            </div>
+
+                            <div class="works__item">
+                                <img class="works__img" src="images/projects-2.webp" alt="works img">
+                                <div class="works__content">
+                                    <h3 class="works__title">Название проекта очень длинное</h3>
+                                    <div class="works__location">г. Москва</div>
+                                    <div class="works__tags">
+                                        <div class="works__tag">#девелопмент</div>
+                                        <div class="works__tag">#строительство</div>
+                                    </div>
+
+                                    <a class="btn-arrow" href="#">→</a>
+                                </div>
+                            </div>
+
+                            <div class="works__item">
+                                <img class="works__img" src="images/projects-1.webp" alt="works img">
+                                <div class="works__content">
+                                    <h3 class="works__title">Название проекта</h3>
+                                    <div class="works__location">г. Москва</div>
+                                    <div class="works__tags">
+                                        <div class="works__tag">#девелопмент</div>
+                                        <div class="works__tag">#строительство</div>
+                                    </div>
+
+                                    <a class="btn-arrow" href="#">→</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn--blue btn--center" href="#">Смотреть все проекты →</a>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- === FOOTER === -->
+            <footer class="footer spacing">
+                <div class="container">
+                    <div class="footer__head mb">
+                        <h2 class="title">контакты</h2>
+                        <a class="footer__logolink" href="/">
+                            <img class="footer__logo" src="images/logo.svg" loading="lazy" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="footer__inner">
+                        <div class="footer__left">
+                            <div class="footer__items">
+                                <div class="footer__item">
+                                    <h3 class="footer__title">адрес</h3>
+                                    <div class="footer__plain">г. Москва, ул. Кирпичная, д. 678, корп. 8</div>
+                                </div>
+
+                                <div class="footer__item">
+                                    <h3 class="footer__title">Телефон</h3>
+                                    <a class="footer__plain" href="tel:+79999999999">+7 999 999 99 99</a>
+                                </div>
+
+                                <div class="footer__item">
+                                    <h3 class="footer__title">Почта</h3>
+                                    <a class="footer__plain" href="mailto:info/info@yandex.ru">info/info@yandex.ru</a>
+                                </div>
+                            </div>
+
+                            <a class="btn btn--blue getModal" href="#modal">Оставить заявку →</a>
+                        </div>
+
+
+                        <div class="footer__whole">
+                            <div class="footer__map" id="map"></div>
+                        </div>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <a class="footer__link" href="#">Политика конфиденциальности</a>
+                        <div class="footer__copyright">Copyright ООО Название компании 2010-2024 </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- === MODAL === -->
+    <div id="modal" class="modal">
+        <div class="modal__inner">
+            <h3 class="modal__title">Оставить заявку</h3>
+            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
+                проведет бесплатную консультацию</p>
+            <button class="modal__close">
+                <img src="images/x-icon.svg" loading="lazy" alt="x icon">
+            </button>
+            <form class="form">
+                <div class="form__item">
+                    <img src="images/profile-icon.svg" loading="lazy" alt="form icon">
+                    <input type="text" name="fullname" placeholder="Ваше имя">
+                </div>
+                <div class="form__item">
+                    <img src="images/tel-icon.svg" loading="lazy" alt="form icon">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+                </div>
+                <button class="btn btn--blue" type="submit">Отправить заявку</button>
+                <label class="form__confirm">
+                    <input type="checkbox" checked>
+                    <span class="form__policy">
+                        Принимаю условия <a href="#">политики конфиденциальности</a>
+                    </span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- === MOBILE MENU === -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__head">
+                <a class="mobile-menu__logo" href="/">
+                    <img src="images/logo.svg" loading="lazy" alt="logo">
+                </a>
+                <button class="mobile-menu__close">
+                    <img src="images/x-icon.svg" loading="lazy" alt="x icon">
+                </button>
+            </div>
+
+            <ul class="mobile-menu__list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Строительство</a></li>
+                <li><a href="#">Проектирование</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Работа у нас</a></li>
+            </ul>
+
+            <div class="footer__items">
+                <div class="footer__item">
+                    <h3 class="footer__title">адрес</h3>
+                    <div class="footer__plain">г. Москва, ул. Кирпичная, д. 678, корп. 8</div>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__title">Телефон</h3>
+                    <a class="footer__plain" href="tel:+79999999999">+7 999 999 99 99</a>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__title">Почта</h3>
+                    <a class="footer__plain" href="mailto:info/info@yandex.ru">info/info@yandex.ru</a>
+                </div>
+            </div>
+
+            <a class="btn btn--white getModal" href="#modal">Оставить заявку →</a>
+        </div>
+    </div>
+
+    <!-- === SCRIPTS === -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

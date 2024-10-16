@@ -1,0 +1,215 @@
+// VARS
+$text: #191919;
+$main: #29659C;
+$grey: #707070;
+$light: #8db2d5;
+
+// EXTENDS
+%hover {
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  @media (any-hover: hover){
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+%color{
+  transition: all 0.1s;
+  cursor: pointer;
+  @media (any-hover: hover){
+    &:hover{
+      color: $main;
+    }
+  }
+}
+
+%close{
+  img{
+    transition: all 0.05s linear;
+  }
+  @media (any-hover: hover){
+    &:hover{
+      img{
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  
+}
+
+@mixin border($border) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"],
+  select,
+  .btn,
+  textarea {
+    border-radius: $border;
+  }
+}
+
+@mixin height($height) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"],
+  select,
+  .btn {
+    height: $height;
+  }
+}
+
+@mixin padding($paddingY, $paddingX) {
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  select,
+  input[type="url"] {
+    padding: $paddingY $paddingX;
+  }
+}
+
+@mixin clamp($line) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%white{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(11%) saturate(7465%) hue-rotate(210deg) brightness(124%) contrast(117%);
+}
+
+%color{
+  transition: color 0.1s;
+  @media (any-hover: hover){
+      &:hover{
+        color: $main;
+      }
+  }
+}
+
+%line{
+  position: relative;
+  padding-bottom: 2px;
+  color: #fff;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transition: all 0.1s linear;
+  }
+
+  @media (any-hover: hover){
+    &:hover::before{
+      width: 0;
+    }
+  }
+}
+
+%selectHide {
+  &::selection {
+    background-color: transparent;
+  }
+
+  *::selection {
+    background-color: transparent;
+  }
+}
+
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 1px solid $light;
+  &::after {
+    content: '';
+    height: 100%;
+    border-radius: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.1s ease-in;
+    background-color: transparent;
+  }
+
+  &:checked {
+    &::after {
+      background-image: url('../images/check-icon.svg');
+    }
+  }
+}
+
+input[type="radio"] {
+  position: relative;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  flex-shrink: 0;
+  border: 1px solid #fff;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+  }
+
+  &:checked {
+    &::after {
+      background-color: #fff;
+    }
+  }
+}
+
