@@ -324,13 +324,6 @@
         justify-content: center;
         align-items: center;
         transition: all 0.2s;
-
-        @media (any-hover: hover) {
-            &:hover {
-                background-color: $light;
-                color: #fff;
-            }
-        }
     }
 
     &__content {
@@ -466,7 +459,8 @@
                     border-color: $light;
 
                     img {
-                        @extend %white;
+                        filter: brightness(0) saturate(100%) invert(100%) sepia(11%) saturate(7465%) hue-rotate(210deg) brightness(124%) contrast(117%);
+
                     }
                 }
             }
@@ -760,6 +754,10 @@
                     &__img {
                         scale: 1.1;
                     }
+
+                    &__title {
+                        color: $main;
+                    }
                 }
             }
         }
@@ -785,6 +783,7 @@
     }
 
     &__title {
+        transition: all 0.1s ease-out;
         font-size: 24px;
     }
 
@@ -932,7 +931,6 @@
     background-color: #fff;
     color: $main;
     border-radius: 50%;
-    @extend %hover;
 }
 
 .about {
@@ -1089,7 +1087,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @extend %hover;
     }
 
     &__line {

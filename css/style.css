@@ -1040,18 +1040,18 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.mobile-menu__close, .mobile-menu__logo, .footer__logo, .projects__btn, .stages__back, .btn-arrow, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
+.mobile-menu__close, .mobile-menu__logo, .footer__logo, .stages__back, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .projects__btn:hover, .stages__back:hover, .btn-arrow:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
+  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .stages__back:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
     opacity: 0.8;
   }
 }
 
 .mobile-menu__list a, .linked a, .contact__boxes a {
-  transition: all 0.02s;
+  transition: all 0.1s;
   cursor: pointer;
 }
 @media (any-hover: hover) {
@@ -1470,18 +1470,18 @@ body {
   padding: 0 70px 0 40px;
 }
 
-.mobile-menu__close, .mobile-menu__logo, .footer__logo, .projects__btn, .stages__back, .btn-arrow, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
+.mobile-menu__close, .mobile-menu__logo, .footer__logo, .stages__back, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .projects__btn:hover, .stages__back:hover, .btn-arrow:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
+  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .stages__back:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
     opacity: 0.8;
   }
 }
 
 .mobile-menu__list a, .linked a, .contact__boxes a {
-  transition: all 0.02s;
+  transition: all 0.1s;
   cursor: pointer;
 }
 @media (any-hover: hover) {
@@ -1625,18 +1625,18 @@ input[type=radio]:checked::after {
   font-weight: 400;
   src: url("../fonts/ALS-Gorizont-Expanded-Regular.woff2") format("woff2"), url("../fonts/ALS-Gorizont-Expanded-Regular.ttf") format("truetype");
 }
-.mobile-menu__close, .mobile-menu__logo, .footer__logo, .projects__btn, .stages__back, .btn-arrow, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
+.mobile-menu__close, .mobile-menu__logo, .footer__logo, .stages__back, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .projects__btn:hover, .stages__back:hover, .btn-arrow:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
+  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .stages__back:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
     opacity: 0.8;
   }
 }
 
 .mobile-menu__list a, .linked a, .contact__boxes a {
-  transition: all 0.02s;
+  transition: all 0.1s;
   cursor: pointer;
 }
 @media (any-hover: hover) {
@@ -2822,18 +2822,18 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.mobile-menu__close, .mobile-menu__logo, .footer__logo, .projects__btn, .stages__back, .btn-arrow, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
+.mobile-menu__close, .mobile-menu__logo, .footer__logo, .stages__back, .vacancies__close, .header__btn, .header__logo, .aside__logo, .modal__close {
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
 @media (any-hover: hover) {
-  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .projects__btn:hover, .stages__back:hover, .btn-arrow:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
+  .mobile-menu__close:hover, .mobile-menu__logo:hover, .footer__logo:hover, .stages__back:hover, .vacancies__close:hover, .header__btn:hover, .header__logo:hover, .aside__logo:hover, .modal__close:hover {
     opacity: 0.8;
   }
 }
 
 .mobile-menu__list a, .linked a, .contact__boxes a {
-  transition: all 0.02s;
+  transition: all 0.1s;
   cursor: pointer;
 }
 @media (any-hover: hover) {
@@ -3719,12 +3719,6 @@ body {
   align-items: center;
   transition: all 0.2s;
 }
-@media (any-hover: hover) {
-  .services__link:hover {
-    background-color: #8db2d5;
-    color: #fff;
-  }
-}
 .services__content {
   display: flex;
   flex-direction: column;
@@ -3829,6 +3823,15 @@ body {
   align-items: center;
   gap: 50px;
 }
+@media (any-hover: hover) {
+  .features__line:hover .features__icon {
+    background-color: #8db2d5;
+    border-color: #8db2d5;
+  }
+  .features__line:hover .features__icon img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(11%) saturate(7465%) hue-rotate(210deg) brightness(124%) contrast(117%);
+  }
+}
 .features__icon {
   height: 90px;
   width: 90px;
@@ -3861,8 +3864,10 @@ body {
   filter: grayscale(100%);
   transition: all 0.2s;
 }
-.trust__item:hover img {
-  filter: unset;
+@media (any-hover: hover) {
+  .trust__item:hover img {
+    filter: unset;
+  }
 }
 
 .banner {
@@ -3945,11 +3950,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-.works__item:hover .works__content {
-  background-color: #191919;
-}
-.works__item:hover .works__img {
-  filter: brightness(50%);
+@media (any-hover: hover) {
+  .works__item:hover .works__content {
+    background-color: #191919;
+  }
+  .works__item:hover .works__img {
+    filter: brightness(50%);
+  }
 }
 .works__img {
   height: 350px;
@@ -4012,11 +4019,13 @@ body {
   display: flex;
   align-items: flex-end;
 }
-.tools__item:hover .tools__img {
-  filter: unset;
-}
-.tools__item:hover .tools__title {
-  background-color: rgba(25, 25, 25, 0.4);
+@media (any-hover: hover) {
+  .tools__item:hover .tools__img {
+    filter: unset;
+  }
+  .tools__item:hover .tools__title {
+    background-color: rgba(25, 25, 25, 0.4);
+  }
 }
 .tools__img {
   width: 100%;
@@ -4046,8 +4055,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-.news__item:hover .news__img {
-  scale: 1.1;
+@media (any-hover: hover) {
+  .news__item:hover .news__img {
+    scale: 1.1;
+  }
+  .news__item:hover .news__title {
+    color: #29659C;
+  }
 }
 .news__wrap {
   height: 300px;
@@ -4065,6 +4079,7 @@ body {
   flex: 1;
 }
 .news__title {
+  transition: all 0.1s ease-out;
   font-size: 24px;
 }
 .news__text {
@@ -4292,8 +4307,10 @@ body {
   grid-template-columns: 1fr 0.5fr;
   background: #29659c;
 }
-.projects__item:hover {
-  background-color: #191919;
+@media (any-hover: hover) {
+  .projects__item:hover {
+    background-color: #191919;
+  }
 }
 .projects__title {
   font-size: 32px;
@@ -4942,6 +4959,10 @@ body {
     width: 100%;
     max-height: unset;
     padding: 50px 20px;
+  }
+  .vacancies__close {
+    right: 10px;
+    top: 10px;
   }
   .vacancies__list {
     font-size: 14px;

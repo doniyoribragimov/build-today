@@ -99,9 +99,6 @@ $light: #8db2d5;
   align-items: center;
 }
 
-%white{
-  filter: brightness(0) saturate(100%) invert(100%) sepia(11%) saturate(7465%) hue-rotate(210deg) brightness(124%) contrast(117%);
-}
 
 %color{
   transition: color 0.1s;
