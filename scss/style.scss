@@ -97,6 +97,10 @@
     }
 }
 
+section:has(.title){
+    overflow: hidden;
+}
+
 .view {
     min-height: 100vh;
     color: #fff;
@@ -104,6 +108,7 @@
     background-size: cover;
     background-position: center;
     padding: 120px 0;
+    overflow: hidden;
 
     &__inner {
         display: grid;
@@ -192,6 +197,7 @@
         gap: 10px;
         z-index: 1;
         cursor: pointer;
+       
 
         &.active {
             img {
@@ -237,6 +243,9 @@
             width: 40px;
             object-fit: contain;
             animation: pulse 2s infinite;
+            &:hover{
+                opacity: 0.8;
+            }
         }
     }
 
@@ -388,6 +397,7 @@
 
     &__lines {
         margin-top: 65px;
+        overflow: hidden;
     }
 
     &__ico {
@@ -531,7 +541,7 @@
     padding: 90px 0;
     display: flex;
     flex-direction: column;
-
+    overflow: hidden;
     &__text {
         margin-left: 100px;
 
@@ -625,9 +635,18 @@
                 .works__img {
                     filter: brightness(50%);
                 }
+
+                .btn-arrow {
+                    background-color: $light;
+                    color: #fff;
+                }
             }
         }
 
+    }
+
+    .btn-arrow {
+        transition: all 0.2s;
     }
 
     &__img {
@@ -1057,6 +1076,13 @@
         @media (any-hover: hover) {
             &:hover {
                 background-color: $text;
+
+                .projects__btn {
+                    background-color: $light;
+                    color: #fff;
+                    transition: all 0.2s;
+                }
+
             }
         }
     }
@@ -1149,6 +1175,9 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        a {
+            @extend %color;
+        }
     }
 
     &__title {

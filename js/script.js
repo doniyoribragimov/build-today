@@ -107,50 +107,6 @@ jQuery(document).ready(function ($) {
 
 });
 
-// ФУНКЦИЯ ДЛЯ ОТСЧЁТА ОТ 0 ДО N
-document.addEventListener("DOMContentLoaded", function () {
-    function counterAnimation(selector) {
-        let counters = document.querySelectorAll(selector);
-        if (counters.length > 0) {
-            for (let i = 0; i < counters.length; i++) {
-                let counter = counters[i];
-                function counterFunction() {
-                    let limit = 0;
-                    if (limit == counters.length) { return; }
-                    counter.dataset.stop = 1;
-                    let x = 0;
-                    limit++;
-                    let int = setInterval(function () {
-                        x = x + Math.ceil(counter.dataset.to / 20);
-                        counter.innerText = x;
-                        if (x > counter.dataset.to) {
-                            counter.innerText = counter.dataset.to;
-                            clearInterval(int);
-                        }
-                    }, 120);
-                }
-                window.addEventListener('scroll', function () {
-                    let pos = counter.getBoundingClientRect().top;
-                    let win = window.innerHeight - 200;
-                    if (pos < win && counter.dataset.stop === "0") {
-                        counterFunction()
-                    }
-                });
-                let counterPosition = counter.getBoundingClientRect().top;
-                let windowPosition = window.innerHeight;
-                if (counterPosition < windowPosition && counter.dataset.stop === "0") {
-                    setTimeout(() => {
-                        counterFunction();
-                    }, 600);
-                }
-            }
-        }
-    }
-
-    counterAnimation('.features__bold span');
-});
-
-
 // МАСКА ДЛЯ ТЕЛЕФОНА В input[type='tel']
 let maskedPhones = document.querySelectorAll("input[type='tel']");
 for (var i = 0; i < maskedPhones.length; i++) {
@@ -277,6 +233,9 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(mapElement);
     }
 });
+
+AOS.init({disable: 'mobile'});
+
 
 const toolsSlider = new Swiper('.tools__slider', {
     loop: false,
